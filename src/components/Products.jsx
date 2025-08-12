@@ -1,15 +1,6 @@
-import React, { useEffect, useState } from "react";
 import CircularGallery from "./CircularGallery";
 
 function Products() {
-  const [dynamicBendValue, setDynamicBendValue] = useState(3);
-
-  const screenWidth = window.screen.width;
-
-  if (screenWidth < 1024) {
-    console.log(`Screen Width: ${screenWidth}px`);
-    setDynamicBendValue(0);
-  }
 
   return (
     <div className=" bg-[#eeeeee] pt-60 pb-60">
@@ -21,7 +12,7 @@ function Products() {
         style={{ height: "600px", position: "relative" }}
       >
         <CircularGallery
-          bend={dynamicBendValue}
+          bend={0}
           textColor="#000"
           font="bold 300px Montserrat"
           borderRadius={0.05}
