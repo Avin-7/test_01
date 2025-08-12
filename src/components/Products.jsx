@@ -6,12 +6,10 @@ function Products() {
 
   const screenWidth = window.screen.width;
 
-  useEffect(() => {
-    if (screenWidth < 1024) {
-      console.log(`Screen Width: ${screenWidth}px`);
-      setDynamicBendValue(0);
-    }
-  }, [screenWidth]);
+  if (screenWidth < 1024) {
+    console.log(`Screen Width: ${screenWidth}px`);
+    setDynamicBendValue(0);
+  }
 
   return (
     <div className=" bg-[#eeeeee] pt-60 pb-60">
