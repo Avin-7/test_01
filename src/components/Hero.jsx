@@ -5,16 +5,19 @@ import dripEffectImage from "../assets/dripEffectImage.jpg";
 function Hero() {
   return (
     <>
-      <div className="z-99 grid grid-cols-8 place-content-center px-28 max-lg:px-0 pt-20 bg-[#892bc7]">
+      <div
+        id="home"
+        className="z-99 grid grid-cols-8 place-content-center px-28 max-lg:px-0 pt-20 bg-[#892bc7]"
+      >
         <div className="col-span-4 max-lg:col-span-4 grid pt-14 max-lg:pl-18 max-md:pl-6">
           <div>
             <h1 className=" text-8xl max-lg:text-7xl max-sm:text-6xl my-6 font-kalnia text-semibold text-white tracking-wide font-semibold leading-28 max-lg:leading-18">
               Crimson Bites
             </h1>
-            <p className=" text-[28px] max-lg:text-lg leading-10 max-lg:leading-7 my-6 w-4/5 tracking-wider text-amber-100 font-stretch-115% font-kalnia">
-              The Love Bite, Tasty the Delcacy.
+            <p className=" text-[24px] max-lg:text-lg leading-10 max-lg:leading-7 my-6 w-4/5 max-md:w-4/6 tracking-wide text-yellow-100 font-montserrat font-normal">
+              The Love Bite, Taste the Delcacy.
             </p>
-            <button className="animated-button my-6">
+            <button className="animated-button my-12">
               <svg
                 viewBox="0 0 24 24"
                 className="arr-2"
@@ -22,7 +25,9 @@ function Hero() {
               >
                 <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
               </svg>
-              <span className="text">Explore Stores</span>
+              <a href="#stores" className="text">
+                Explore Stores
+              </a>
               <span className="circle"></span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

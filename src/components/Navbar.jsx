@@ -12,32 +12,35 @@ function Navbar() {
             <img
               src={crimsonBitesLogo}
               className=" size-9 object-cover"
-              alt=""
+              alt="crimson-bites-logo"
             />
-            <h1 className=" text-white font-kalnia text-xl max-md:text-lg max-sm:text-sm font-medium">
+            <a
+              href="#home"
+              className=" text-white font-kalnia text-xl max-md:text-lg max-sm:text-sm font-medium"
+            >
               Crimson bites
-            </h1>
+            </a>
           </div>
         </div>
         <div className=" place-self-center max-lg:hidden">
           <div className=" flex gap-20">
             <a
-              href=""
-              className=" text-white text-[18px] font-kalnia tracking-wide font-medium"
+              href="#products"
+              className=" text-gray-50 text-[16px] font-jost tracking-wider font-normal hover:text-yellow-100"
             >
-              products
+              Products
             </a>
             <a
-              href=""
-              className=" text-white text-[18px] font-kalnia tracking-wide font-medium"
+              href="#stores"
+              className=" text-gray-50 text-[16px] font-jost tracking-wider font-normal hover:text-yellow-100"
             >
-              stores
+              Stores
             </a>
             <a
-              href=""
-              className=" text-white text-[18px] font-kalnia tracking-wide font-medium"
+              href="#contact-us"
+              className=" text-gray-50 text-[16px] font-jost tracking-wider font-normal hover:text-yellow-100"
             >
-              contact
+              Contact
             </a>
           </div>
         </div>
@@ -57,22 +60,22 @@ function Navbar() {
       {showNavbar && (
         <div className=" hidden max-lg:block ">
           <div className="w-full bg-transparent fixed top-16 z-[999]">
-            <div className="bg-[#f5ffca] rounded-b-xl flex flex-col justify-center items-center gap-10 p-5">
+            <div className="bg-yellow-50 rounded-b-xl flex flex-col justify-center items-center gap-10 p-5">
               <a
-                href=""
-                className=" text-black text-[18px] font-kalnia tracking-wide font-medium"
+                href="#products"
+                className=" text-black text-[16px] font-jost tracking-wider font-normal hover:text-yellow-100"
               >
                 products
               </a>
               <a
-                href=""
-                className=" text-black text-[18px] font-kalnia tracking-wide font-medium"
+                href="#stores"
+                className=" text-black text-[16px] font-jost tracking-wider font-normal hover:text-yellow-100"
               >
                 stores
               </a>
               <a
-                href=""
-                className=" text-black text-[18px] font-kalnia tracking-wide font-medium"
+                href="#contact-us"
+                className="text-black text-[16px] font-jost tracking-wider font-normal hover:text-yellow-100"
               >
                 contact
               </a>

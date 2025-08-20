@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@plugin "tailwindcss-motion";
+@plugin "tailwindcss-intersect";
+
 @theme {
   --font-vollkorn: "Vollkorn", sans-serif;
   --font-josefin: "Josefin Sans", sans-serif;
@@ -90,4 +93,14 @@
   width: 220px;
   height: 220px;
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .animated-button {
+    padding: 12px 32px;
+    font-size: 14px;
+  }
+  .animated-button svg {
+    width: 20px;
+  }
 }
