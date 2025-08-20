@@ -21,10 +21,7 @@ function Products() {
       <div className="pt-20 px-20 max-sm:px-10 grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-1 gap-y-32 max-md:gap-y-10 gap-x-5 ">
         {productItems &&
           productItems.map((product) => (
-            <div
-              className="grid place-items-center intersect:motion-preset-slide-up motion-delay-300"
-              key={Math.random() * 20}
-            >
+            <div className="grid place-items-center " key={Math.random() * 20}>
               <img
                 src={product.image}
                 className="rounded-xl object-cover h-72 w-72"
