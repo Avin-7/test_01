@@ -7,6 +7,8 @@ import ContactUs from "./components/ContactUs";
 
 import ObserverProvider from "./ObserverProvider";
 
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
   return (
     <>
@@ -19,6 +21,7 @@ function App() {
           <ContactUs />
         </ObserverProvider>
       </div>
+      <Analytics />
     </>
   );
 }

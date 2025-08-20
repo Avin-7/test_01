@@ -6,18 +6,6 @@ function Products() {
       <h1 className="text-5xl font-kalnia font-semibold text-center text-[#892bc7] intersect:motion-preset-slide-up motion-delay-100">
         Go Ahead, Pick Your Treat
       </h1>
-      {/* <div
-        className=" pt-10 "
-        style={{ height: "600px", position: "relative" }}
-      >
-        <CircularGallery
-          bend={0}
-          textColor="#000"
-          font="bold 300px Montserrat"
-          borderRadius={0.05}
-          scrollEase={0.15}
-        />
-      </div> */}
       <div className="pt-20 px-20 max-sm:px-10 grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-1 gap-y-32 max-md:gap-y-10 gap-x-5 ">
         {productItems &&
           productItems.map((product) => (
